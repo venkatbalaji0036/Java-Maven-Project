@@ -1,9 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>Selenium</groupId>
-  <artifactId>Batch_8_00PM_To_9_00PM</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   
+  <groupId>Snyk</groupId>
+  <artifactId>Batch_8_00PM_To_9_00PM</artifactId>
+  <version>2.1.1</version>
+  <packaging>
+  	<?m2e execute onConfiguration,onIncremental?><?m2e execute onConfiguration,onIncremental?>maven-plugin</packaging>
+
+  <scm>
+    <url>https://github.com/snyk/snyk-maven-plugin</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <name>snyk.io</name>
+      <email>support@snyk.io</email>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <project.sourceCompatibility>1.8</project.sourceCompatibility>
+    <project.targetCompatibility>1.8</project.targetCompatibility>
+    <maven.version>3.6.3</maven.version>
+  </properties>
+
+
   <dependencies>  
 	  <dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>

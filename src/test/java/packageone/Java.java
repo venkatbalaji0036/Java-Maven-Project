@@ -26,9 +26,6 @@ public class Java {
 		System.out.println("sample print");
 		System.out.println(Var);
 		
-		char ch = 'A';
-		boolean flag = true;
-		float f = 10.0f;
 		System.out.println("======================");
 		//Unary Operator
 		

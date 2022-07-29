@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Scan example API
           command: |
-            mkdir/zap/wrk
+            mkdir /zap/wrk
             zap-api-scan.py -f openapi -t 'http://example.com/openapi.json' -r apiscanreport.html
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows

@@ -21,13 +21,21 @@ jobs:
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
-          command: mvn -B -DskipTests clean package
+          #command: mvn -B -DskipTests clean package
       # Then run your tests!
       - run:
           name: Test
           command: mvn test
-          
 
+  zap-scan:
+    docker:
+      - image: 'owasp/zap2docker-stable:latest'
+    steps:
+      - run:
+          name: Scan example API
+          command: |
+            mkdir/zap/wrk
+            zap-api-scan.py -f openapi -t 'http://example.com/openapi.json' -r apiscanreport.html
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
